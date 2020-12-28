@@ -1,12 +1,14 @@
 # TStar-Preference
 ### **Files :**
 **1. query.dat**  : Goal and Preference LTL queries must be specified in this file.
+<pre>
 Example file:
 3 ---> Tuning Factor 'P' of the objective function.
 2 ---> num of Preference LTL specs
-./bin/ltl2tgba \--spin -C ' [](!p3) '
-./bin/ltl2tgba \--spin -C ' [](!p4) '
+./bin/ltl2tgba \--spin -C ' [ ](!p3) '
+./bin/ltl2tgba \--spin -C ' [ ](!p4) '
 ./bin/ltl2tgba \--spin ' [](<>p1 && <>p2) ' ---> Goal LTL spec
+</pre>
 
 **2. cfile_rec.dat** : 2D workspace descriptor file.
 Input format:
