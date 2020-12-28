@@ -44,9 +44,9 @@ Install Spot-2.6 tool for LTL2TGBA converter. Copy the bin folder of spot instal
 </pre>
 This command should give us the Buchi automata transitions for the give query
 
-**4. djk-optimal-run.cpp**: T&ast-Preference ALgorithm for 2D workspace. This is the Dijkstras algorithm based solution to the mentioned problem.
+**4. djk-optimal-run.cpp**: T&ast;-Preference ALgorithm for 2D workspace. This is the Dijkstras algorithm based solution to the mentioned problem.
 
-**5. motion-planner-final.cpp** : T&ast-Preference; ALgorithm for 2D worksapce
+**5. motion-planner-final.cpp** : T&ast;-Preference ALgorithm for 2D worksapce
 
 **6. planner_variables.h** : Helper file for 2D workspace
 
