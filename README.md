@@ -7,7 +7,7 @@ Example file:
 2 ---> num of Preference LTL specs
 ./bin/ltl2tgba \--spin -C ' [ ](!p3) '
 ./bin/ltl2tgba \--spin -C ' [ ](!p4) '
-./bin/ltl2tgba \--spin ' [](<>p1 && <>p2) ' ---> Goal LTL spec
+./bin/ltl2tgba \--spin ' [](<>p1 && <>p2 && !p5) ' ---> Goal LTL spec
 </pre>
 
 **2. cfile_rec.dat** : 2D workspace descriptor file.
