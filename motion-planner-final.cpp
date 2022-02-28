@@ -1339,36 +1339,6 @@ void expand_prod_graph_node(priority_queue<prod_graph_node*,vector<prod_graph_no
    int lps1=0,lps2=0;
    if(node_neighbour.find(key(cur_node_info))==node_neighbour.end())
    { 
-	    /*for(int j=0;j<qtot;j++)
-	    //{
-	      		
-	        if(trans[current_automaton_state][j].size()==1 && trans[current_automaton_state][j][0].size()==1 && trans[current_automaton_state][j][0][0]==0)
-	        {   
-	          /*  //if exists a transition from current_automaton_state to j on 1//
-	            prod_graph_node neigh_nd;
-	            neigh_nd.coord = nbh;
-	            neigh_nd.state = j;
-		    //neigh_nd.cfstate = cfs;
-		    for(int pro=0;pro<prod_states.size();pro++)
-	            {	
-				//cfs=prod_states[pro];
-		       		neigh_nd.cfstate = prod_states[pro];
-				neigh_nd.t_cst = trans_cost[prod_states[pro]];
-				if(neigh_nd.t_cst > trans_cost[cfs] && pre==0)
-					continue;
-				//cout<<"------------------------destination state"<<cfs<<"\n";
-				//cout<<"----------------destination state,cost to neighbour-->"<<cfs<<neigh_nd.t_cst<<"\n";
-		       		node_neighbour[key(cur_node_info)].push_back(neigh_nd);
-		    }	
-		    //neigh_nd.t_cst = trans_cost[cfs];// power(prefs,prefs+2);
-	            //node_neighbour[key(cur_node_info)].push_back(neigh_nd); 
-	        }
-	        else
-	        {*/
-	            //for all the grid states satisfying the transition from current_automaton_state to j//
-		    //if(!negloop && !zeroloop)
-			//continue;
-			int hi=0;
 		    
 		    for(int pro=0;pro<prod_states.size();pro++)
 		    {
@@ -1437,18 +1407,12 @@ void expand_prod_graph_node(priority_queue<prod_graph_node*,vector<prod_graph_no
 			   }
 			}
 		    }
-	           
-	        //}
-	     
-	   //}
       	    
 	   for(int j=0;j<qtot;j++)
 	   {
 		
 	      if(j==current_automaton_state && !neg_trans_to_neighbour[j])
 	         continue;
-	      //if(hi==1)
-		//cout<<"hmm\n";
 //for all outgoing automaton transitions on conjunction of negative literals check whether a neighbour of cur_pt in grid satisfies the trans condn//
               for(int pro=0;pro<prod_states.size();pro++)
 	      { 
