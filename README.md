@@ -1,4 +1,4 @@
-# TStar-Preference
+# PTStar
 ### **Files :**
 **1. query.dat**  : Goal and Preference LTL queries must be specified in this file.
 <pre>
