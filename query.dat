@@ -1,5 +1,0 @@
-3
-2
-./bin/ltl2tgba \--spin -C ' [](!p3) '
-./bin/ltl2tgba \--spin -C ' [](!p4) '
-./bin/ltl2tgba \--spin ' [](<>p1 && <>p2 && !p5) '
